@@ -1,5 +1,5 @@
-package exercicios;
-import java.lang.Double;
+package estrutura_sequencial_exercicios;
+import java.util.Locale;
 
 public class _01_saidaDeDadosJava {
 
@@ -15,8 +15,14 @@ public class _01_saidaDeDadosJava {
 		double price2 = 650.50;
 		double measure = 53.234567;
 		
-		System.out.printf("Products: %s, which price is $ %d %.2f %n %s, which price is %.2f %n", product1, price1, product2, price2);
-		System.out.printf("Record: ");
+		System.out.printf("Products: %s, which price is $ %.2f %n%s, which price is $ %.2f %n", product1, price1, product2, price2);
+		System.out.printf("%nRecord: %d years old, code %s and gender: %s.%n", age, code, gender);
+		Locale.setDefault(new Locale("pt", "Brasil"));
+		System.out.printf("%nMeasure with eirght decimal places: %.8f%n", measure);
+		Locale.setDefault(new Locale("pt", "Brasil"));
+		System.out.printf("Rouded (threee decimal places): %.3f%n", measure);
+		Locale.setDefault(new Locale("en", "US"));
+		System.out.printf("US decimal point: %.3f%n", measure);
 	}
 
 }
