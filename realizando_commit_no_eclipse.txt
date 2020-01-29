@@ -1,0 +1,5 @@
+PARA COMMITAR um projeto ou pacote/arquivo do projeto faça:
+
+Clique com botão direito do mouse sobre o projeto/pacote/arquivo que deseja commitar > Team > Commit.
+Uma aba será aberta mostrando dados sobre o commit e um campo para inserção de comentário. 
+Comente brevemente o motivo do commit e clique em "commit" ou "commit and push"
