@@ -1,6 +1,6 @@
 package estrutura_sequencial_exercicios;
 
-public class area_do_trapezio {
+public class _02_Area_do_Trapezio {
 	
 	public static void main(String[] args) {
 		double b = 6.0; //base menor
@@ -10,8 +10,8 @@ public class area_do_trapezio {
 		
 		area = (b + B) / 2 * h;
 		
-		System.out.printf("A área do trapézio é: %.2f	", area);
-		//Para calcular a área do trapézio a fórumla é: "área = (b + B)/2 * h"
+		System.out.printf("A Ã¡rea do trapÃ©zio Ã©: %.2f	", area);
+		//Para calcular a Ã¡rea do trapÃ©zio a fÃ³rumla Ã©: "Ã¡rea = (b + B)/2 * h"
 		
 		
 	}
