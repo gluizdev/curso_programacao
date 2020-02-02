@@ -17,10 +17,11 @@ public class _01_saidaDeDadosJava {
 		
 		System.out.printf("Products: %s, which price is $ %.2f %n%s, which price is $ %.2f %n", product1, price1, product2, price2);
 		System.out.printf("%nRecord: %d years old, code %s and gender: %s.%n", age, code, gender);
+		
 		Locale.setDefault(new Locale("pt", "Brasil"));
 		System.out.printf("%nMeasure with eirght decimal places: %.8f%n", measure);
-		Locale.setDefault(new Locale("pt", "Brasil"));
 		System.out.printf("Rouded (threee decimal places): %.3f%n", measure);
+		
 		Locale.setDefault(new Locale("en", "US"));
 		System.out.printf("US decimal point: %.3f%n", measure);
 	}
