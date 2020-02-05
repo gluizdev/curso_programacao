@@ -8,7 +8,11 @@ public class _03_EntradaDeDados_Scanner {
 		Scanner leia = new Scanner(System.in); // para uso da classe Scanner foi necessário importá-la no java.util.
 		int a=0;
 		String b="0", escolha;
-		double c=0;
+		double c=0, d=0;
+		
+		System.out.println("Digite seu nome em seguida o nome de sua cidade.");
+		String nome = leia.nextLine();
+		String cidade = leia.nextLine();
 		
 		System.out.println("O cursor estará esperando um valor inteiro 'NomeDoScanner.nextInt()'");
 		a = leia.nextInt();
@@ -16,7 +20,7 @@ public class _03_EntradaDeDados_Scanner {
 		System.out.println("O cursor estará esperando uma String 'NomeDoScanner.next()'");
 		b = leia.next();
 	
-		System.out.println("Você digitará número double agora. Para formato Brasileiro pressione ',' (vídgula), para americano '.'(ponto):");
+		System.out.println("Você digitará número double agora. Para formato Brasileiro pressione ',' (vídgula), para americano pressione '.'(ponto):");
 		escolha = leia.next();
 		
 		if (escolha.equals(",")) {
@@ -24,21 +28,20 @@ public class _03_EntradaDeDados_Scanner {
 			System.out.println("Digite um Double (2,45 - formato 'PT', 'Brasil') 'NomeDoScanner.nextDouble()'");
 			Locale.setDefault(new Locale("pt","Brasil"));
 			c = leia.nextDouble();	
-			System.out.printf("%nValor inteiro digitado foi '%d' %nString digitada foi '%s'. %nValor double (PT BR) foi: %.2f", a, b, c);
+			System.out.printf("%nValor inteiro digitado foi %d %nString digitada foi %s. %nValor double (PT BR) foi: %.2f",a,b,c);
 			
 		} else if(escolha.equals(".")) {
 		
-			System.out.println("O cursor estará esperando um número Double (2.45 - formato 'en', 'US') 'NomeDoScanner.nextDouble()'");
-			Locale.setDefault(new Locale("en", "US"));
-			double d;
+			System.out.println("O cursor estará esperando um número Double (2,45 - formato 'en', 'US') use vírgula, será mostrado com ponto (.)");
 			d = leia.nextDouble();
-			System.out.printf("%nValor inteiro digitado foi '%d' %nString digitada foi '%s' %nValor double (EN USS) foi: %.2f", a, b, d);
+			Locale.setDefault(new Locale("en", "US")); // Não está dando certo capturar o dado separado por ponto. Captura com ',' e mostra com '.'!
+			System.out.printf("%nValor inteiro digitado foi %d %nString digitada foi %s %nValor double (EN USS) foi: %.2f",a,b,d);
 			
 			} else {
 				System.out.println("Você digitou o valor incorreto.");
 			}
 
-		System.out.println("Fim");
+		System.out.printf("%nSeu nome é: %s%nSua cidade é: %s%nFim.", nome, cidade);
 		
 		leia.close();
 	}
