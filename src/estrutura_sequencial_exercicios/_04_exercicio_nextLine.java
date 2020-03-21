@@ -1,10 +1,10 @@
-package account;
+package estrutura_sequencial_exercicios;
 import java.util.Scanner;
 
 /* o método nextLine() você pode digitar String numa linha utilizando espaços que funciona normalmente.
  Este método permite ler uma linha toda, incluindo espaços.*/
 
-public class exercicio_nextLine {
+public class _04_exercicio_nextLine {
 	
 	/**
 	 * @param args
