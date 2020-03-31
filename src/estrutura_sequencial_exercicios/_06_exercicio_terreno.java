@@ -20,8 +20,8 @@ public class _06_exercicio_terreno {
 		double area = largura * comprimento;
 		double valorTotal = area*preco;
 		
-		System.out.printf("\n"+"Largura: %.2f\nComprimento: %.2f\nPreço do metro²: R$%.2f\n",largura,comprimento,preco);
-		System.out.printf("Área total:  %.2f\nValor do Terreno: %.2f",area,preco);
+		//System.out.printf("\n"+"Largura: %.2f\nComprimento: %.2f\nPreço do metro²: R$%.2f\n",largura,comprimento,preco);
+		System.out.printf("Área total:  %.2f\nValor do M²: %.2f\nValor do Terreno: %.2f",area,preco,valorTotal);
 		
 		
 		leia.close();
